@@ -1,6 +1,7 @@
 import React from 'react';
 import { NativeBaseProvider } from 'native-base';
 import { StatusBar, View } from 'react-native';
+import { Loading } from '@components/Loading';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
   return (
     <NativeBaseProvider>
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
-      { fontsLoaded ? <View/> : <View/> }
+      { fontsLoaded ? <View/> : <Loading/> }
     </NativeBaseProvider>
   );
 }
