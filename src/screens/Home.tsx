@@ -28,15 +28,16 @@ export function Home() {
         my={10}
         maxH={10}
       />
-
-      <HStack>
-        <Heading>
-          Exercícios
-        </Heading>
-        <Text>
-          4
-        </Text>
-      </HStack>
+      <VStack flex={1} px={8}>
+        <HStack justifyContent="space-between" mb={5}>
+          <Heading color="gray.200" fontSize="md">
+            Exercícios
+          </Heading>
+          <Text color="gray.200" fontSize="sm">
+            4
+          </Text>
+        </HStack>
+      </VStack>
 
     </VStack>
   )
