@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FlatList, HStack, VStack } from 'native-base';
+import { FlatList, Heading, HStack, Text, VStack } from 'native-base';
 
 import { Group } from '@components/Group';
 import { HomeHeader } from '@components/HomeHeader';
@@ -28,6 +28,15 @@ export function Home() {
         my={10}
         maxH={10}
       />
+
+      <HStack>
+        <Heading>
+          Exercícios
+        </Heading>
+        <Text>
+          4
+        </Text>
+      </HStack>
 
     </VStack>
   )
